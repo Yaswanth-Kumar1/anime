@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+          border:2px solid black;
+          animation-duration: 3s;
+          animation-name: table;
+          position:relative;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: 1;
+        }
+        @keyframes table{
+            0%{left:0px;top:0px}
+            25%{left:50px;top:50px}
+            50%{left:100px;top:0px}
+           100%{left:0px;top:0px}
+        }
+        th:hover{
+
+          transition-property: all;
+          transition-duration: 1s;
+          transition-timing-function: ease-in-out;
+          background-color: burlywood;
+          color:blue;
+          
+          
+        }
+        td:hover{
+          transition-property: all;
+          transition-duration: 1s;
+          transition-timing-function: ease-in-out;
+          background-color: darkseagreen;
+          color:blue;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px" rules="all" cellspacing="10px" cellpadding="10px">
+        <tr >
+         <th>Player Name</th>
+         <th>Age</th>
+         <th>Country</th>
+         <th>Test Ranking</th>
+        </tr>
+        <tr>
+            <td>Smith</td>
+            <td rowspan="2">34</td>
+            <td>Australia</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Kohli</td>
+            <td>India</td>
+            <td>14</td>
+        </tr>
+        <tr>
+            <td>Joe Root</td>
+            <td rowspan="2">32</td>
+            <td>England</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Kane Williamson</td>
+            <td>New Zealand</td>
+            <td>2</td>
+        </tr>
+       
+    </table>
+   
+</body>
+</html>
